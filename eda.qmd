@@ -1,0 +1,45 @@
+---
+title: "Penguins EDA"
+format:
+  html:
+    code-fold: true
+---
+
+## Penguin Size and Mass by Sex and Species
+
+```{r}
+#| message: false
+library(palmerpenguins)
+library(dplyr)
+library(ggplot2)
+
+df <- palmerpenguins::penguins
+```
+
+```{r}
+#| label: tbl-summary
+#| tbl-cap: Average values grouped by species and sex
+#| message: false
+df |> 
+  group_by(species, sex) |> 
+  summarise(
+    across(
+      where(is.numeric), 
+      \(x) mean(x, na.rm = TRUE)
+      )
+    ) |> 
+  knitr::kable()
+```
+
+## Penguin Size vs Mass by Species
+
+```{r}
+#| label: fig-scatter
+#| fig-cap: Scatter plot of bill length vs body mass.
+#| message: false
+#| warning: false
+df |> 
+  ggplot(aes(x = bill_length_mm, y = body_mass_g, color = species)) +
+  geom_point() + 
+  geom_smooth(method = "lm")
+```
