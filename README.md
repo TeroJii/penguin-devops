@@ -33,3 +33,15 @@ deactivate
 ```
 
 The Python documentation is a good place to consult in case you run into obstacles. You can find it [here](https://docs.python.org/3/library/venv.html).
+
+### R
+
+The R virtual environment is created using the `renv` package. Renv stores the dependencies in a renv.lock file. 
+
+If you want to install the packages listed in the `renv.lock` file, you can run the following command:
+
+```r
+renv::restore()
+```
+
+Please consult the [renv documentation](https://rstudio.github.io/renv/articles/renv.html) for more information on how to use renv.
