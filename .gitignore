@@ -10,3 +10,7 @@ venv/
 # Python cache
 __pycache__/
 *.py[cod]
+
+# Quarto outputs
+*.html
+*_files/
