@@ -1,2 +1,35 @@
 # penguin-devops
 Lab solutions for the book [DevOps for Data Science](https://do4ds.com/)
+
+## Virtual Environment Setup
+
+The project uses venv and renv for Python and R respectively.
+
+
+### Python
+
+The python virtual environment is created using the `venv` module. An environment with the name `.venv` has been created in the root directory of the project by running the following command:
+
+```bash
+python3 -m venv .venv
+```
+
+To activate the virtual environment (in Powershell), run the following command:
+
+```Powershell
+.venv\Scripts\Activate.ps1
+```
+
+To install the required packages listed in the requirements.txt file, run the following command:
+
+```bash
+pip install -r requirements.txt
+```
+
+To deactivate the virtual environment, run the following command:
+
+```bash
+deactivate
+```
+
+The Python documentation is a good place to consult in case you run into obstacles. You can find it [here](https://docs.python.org/3/library/venv.html).
