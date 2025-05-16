@@ -6,7 +6,7 @@ Lab solutions for the book [DevOps for Data Science](https://do4ds.com/)
 The project uses venv and renv for Python and R respectively.
 
 
-### Python
+### Virtual environment for Python
 
 The python virtual environment is created using the `venv` module. An environment with the name `.venv` has been created in the root directory of the project by running the following command:
 
@@ -34,7 +34,7 @@ deactivate
 
 The Python documentation is a good place to consult in case you run into obstacles. You can find it [here](https://docs.python.org/3/library/venv.html).
 
-### R
+### Virtual environment for R
 
 The R virtual environment is created using the `renv` package. Renv stores the dependencies in a renv.lock file. 
 
