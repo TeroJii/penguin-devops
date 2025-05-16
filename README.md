@@ -32,6 +32,15 @@ To deactivate the virtual environment, run the following command:
 deactivate
 ```
 
+### Updating the requirements.txt file
+
+If you want to update the requirements.txt file with the packages installed in your virtual environment, you can run the following command:
+
+```bash
+pip freeze > requirements.txt
+```
+This will overwrite the existing requirements.txt file with the current packages installed in your virtual environment.
+
 The Python documentation is a good place to consult in case you run into obstacles. You can find it [here](https://docs.python.org/3/library/venv.html).
 
 ### Virtual environment for R
