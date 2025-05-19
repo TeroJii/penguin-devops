@@ -6,13 +6,13 @@ api_url = 'http://127.0.0.1:8080/predict'
 app_ui = ui.page_fluid(
     ui.panel_title("Penguin Mass Predictor"), 
     ui.layout_sidebar(
-        ui.panel_sidebar(
+        ui.sidebar(
             [ui.input_slider("bill_length", "Bill Length (mm)", 30, 60, 45, step = 0.1),
             ui.input_select("sex", "Sex", ["Male", "Female"]),
             ui.input_select("species", "Species", ["Adelie", "Chinstrap", "Gentoo"]),
             ui.input_action_button("predict", "Predict")]
         ),
-        ui.panel_main(
+        ui.page_auto(
             ui.h2("Penguin Parameters"),
             ui.output_text_verbatim("vals_out"),
             ui.h2("Predicted Penguin Mass (g)"), 
