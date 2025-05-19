@@ -54,3 +54,15 @@ renv::restore()
 ```
 
 Please consult the [renv documentation](https://rstudio.github.io/renv/articles/renv.html) for more information on how to use renv.
+
+## Running the Shiny App
+
+After starting the Python virtual environment, you can run the Shiny app by running the following commands in the terminal:
+
+```bash
+py
+from shiny import run_app
+run_app()
+```
+
+This will start the `app.py` in the working directory. After running the app, you can close the app by pressing `Ctrl + C` in the terminal.
